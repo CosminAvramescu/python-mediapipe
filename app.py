@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
-import app as mp
 import numpy as np
+import mediapipe as mp
 
 app = Flask(__name__)
 
