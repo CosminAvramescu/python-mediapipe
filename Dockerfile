@@ -1,5 +1,5 @@
 # Start from a base image that includes Python 3.7
-FROM python:3.7-slim
+FROM python:3.8-slim
 
 # Install necessary system dependencies, including libgl1-mesa-glx
 RUN apt-get update && apt-get install -y \
@@ -11,7 +11,7 @@ WORKDIR /app
 
 # Copy the requirements.txt file and install Python dependencies
 COPY requirements.txt requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Copy the rest of the application code into the container
 COPY . .
