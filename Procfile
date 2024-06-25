@@ -1,1 +1,1 @@
-web: python mediapipe.py
+web: python app.py

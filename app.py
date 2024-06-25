@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-import mediapipe as mp
+import app as mp
 import numpy as np
 
 app = Flask(__name__)
